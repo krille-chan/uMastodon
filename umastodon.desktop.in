@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=uMastodon
+_Name=uMastonauts
 Exec=qmlscene qml/Main.qml
 Icon=assets/logo.svg
 Terminal=false

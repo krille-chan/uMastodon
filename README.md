@@ -1,4 +1,4 @@
-# uMastodon
+# uMastonauts
 
 Unofficial Mastodon app for Ubuntu Touch using the instance.social API and the webapp of the chosen instance.
 

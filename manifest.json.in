@@ -1,15 +1,15 @@
 {
     "name": "umastodon.christianpauly",
-    "description": "Unofficial app for Mastodon",
+    "description": "Unofficial instance chooser and webapp for Mastodon",
     "architecture": "@CLICK_ARCH@",
-    "title": "uMastodon",
+    "title": "uMastonauts",
     "hooks": {
         "umastodon": {
             "apparmor": "umastodon.apparmor",
             "desktop":  "umastodon.desktop"
         }
     },
-    "version": "1.0.0",
+    "version": "1.0.1",
     "maintainer": "Christian Pauly <christian-pauly@posteo.de>",
     "framework" : "ubuntu-sdk-15.04.5"
 }

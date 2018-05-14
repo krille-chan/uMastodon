@@ -25,7 +25,7 @@ ListItem {
         )
 
         instance = text
-        mainStack.push (Qt.resolvedUrl("../pages/Loading.qml"))
+        mainStack.push (Qt.resolvedUrl("../pages/MastodonWebview.qml"))
     }
 
     ListItemLayout {

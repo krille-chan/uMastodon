@@ -31,7 +31,7 @@ MainView {
                 var rs = tx.executeSql('SELECT * FROM Url')
                 if ( rs.rows.length > 0 ) {
                     instance = rs.rows[0].url
-                    mainStack.push(Qt.resolvedUrl("./pages/Loading.qml"))
+                    mainStack.push(Qt.resolvedUrl("./pages/MastodonWebview.qml"))
                 }
                 else {
                     mainStack.push(Qt.resolvedUrl("./pages/InstancePicker.qml"))

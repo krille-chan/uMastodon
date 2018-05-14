@@ -20,18 +20,14 @@ Page {
         PickerDialog {}
     }
 
-    Rectangle {
-        anchors.fillIn: parent
-        visible: webView.visible
-    }
-
     WebView {
         id: webView
         width: parent.width
         height: parent.height
         visible: false
         onLoadProgressChanged: {
-            if ( loadProgress === 1000 ) visible = true
+            progressBar.value = loadProgress
+            if ( loadProgress === 100 ) visible = true
         }
         anchors.fill: parent
         url: instance.indexOf("http") != -1 ? instance : "https://" + instance
@@ -53,5 +49,48 @@ Page {
             }
         }
     }
+
+    Rectangle {
+        anchors.fill: parent
+        visible: !webView.visible
+        color: "#393f4f"
+
+        Label {
+            id: progressLabel
+            color: "white"
+            text: i18n.tr('Loading ') + instance
+            anchors.centerIn: parent
+            textSize: Label.XLarge
+        }
+
+        ProgressBar {
+            id: progressBar
+            value: 0
+            minimumValue: 0
+            maximumValue: 100
+            anchors.top: progressLabel.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.topMargin: 10
+        }
+
+        Button {
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: height
+            anchors.horizontalCenter: parent.horizontalCenter
+            color: UbuntuColors.red
+            text: "Choose another Instance"
+            onClicked: {
+                db.transaction(
+                    function(tx) {
+                        tx.executeSql('DELETE FROM Url')
+                        mainStack.clear ()
+                        mainStack.push (Qt.resolvedUrl("./InstancePicker.qml"))
+                    }
+                )
+            }
+        }
+    }
+
+
 
 }

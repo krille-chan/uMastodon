@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: umastodon.christianpauly\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-14 08:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/pages/Loading.qml:13
+msgid "Loading "
+msgstr ""
+
+#: ../qml/pages/InstancePicker.qml:70
+msgid "Choose a Mastodon instance"
+msgstr ""
+
+#: ../qml/pages/InstancePicker.qml:78 ../qml/pages/Info.qml:10
+msgid "Info"
+msgstr ""
+
+#: ../qml/pages/InstancePicker.qml:111
+msgid "Search or enter a custom address"
+msgstr ""
+
+#: ../qml/pages/Info.qml:35
+msgid "Buy me a coffee"
+msgstr ""
+
+#: ../qml/pages/Info.qml:44
+msgid "uMastodon by Christian Pauly"
+msgstr ""
+
+#: ../qml/pages/Info.qml:44
+msgid "Email: "
+msgstr ""
+
+#: umastodon.desktop.in.h:1
+msgid "uMastodon"
+msgstr ""

@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Christian Pauly <christian-pauly@posteo.de> 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: umastodon.christianpauly\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-14 07:51+0000\n"
+"PO-Revision-Date: 2018-05-14 07:51+0000\n"
+"Last-Translator: Christian Pauly <christian-pauly@posteo.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/pages/Loading.qml:13
+msgid "Loading "
+msgstr "Lade "
+
+#: ../qml/pages/InstancePicker.qml:70
+msgid "Choose a Mastodon instance"
+msgstr "Wähle eine Mastodon Instanz"
+
+#: ../qml/pages/InstancePicker.qml:78 ../qml/pages/Info.qml:10
+msgid "Info"
+msgstr ""
+
+#: ../qml/pages/InstancePicker.qml:111
+msgid "Search or enter a custom address"
+msgstr "Suche oder gib eine Adresse ein"
+
+#: ../qml/pages/Info.qml:35
+msgid "Buy me a coffee"
+msgstr "Gib mir einen Kaffee aus"
+
+#: ../qml/pages/Info.qml:44
+msgid "uMastodon by Christian Pauly"
+msgstr "uMastodon von Christian Pauly"
+
+#: ../qml/pages/Info.qml:44
+msgid "Email: "
+msgstr ""
+
+#: umastodon.desktop.in.h:1
+msgid "uMastodon"
+msgstr ""

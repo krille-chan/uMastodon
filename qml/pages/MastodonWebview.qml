@@ -53,7 +53,7 @@ Page {
     Rectangle {
         anchors.fill: parent
         visible: !webView.visible
-        color: "#393f4f"
+        color: "#191b22"
 
         Label {
             id: progressLabel

@@ -1,5 +1,26 @@
 <?xml version="1.0" ?><svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<rect width="64" rx="6" ry="6" height="64" fill="#ffffff" />
+<defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#4F5D73;" />
+        <stop offset="67%" style="stop-color:#4F5D73;" />
+        <stop offset="67%" style="stop-color:#3F4D63;" />
+        <stop offset="100%" style="stop-color:#4F5D73;" />
+    </linearGradient>
+</defs>
+<rect width="64" height="64" fill="url(#grad1)" />
 
-<circle cx="32" cy="32" fill="#4F5D73" r="32"/><path d="M56,37c0,2-10.745,8-24,8S8,39,8,37c0-1.812,10.745-8,24-8S56,35.063,56,37z" fill="#231F20" opacity="0.2"/><path d="M56,35c0,2-10.745,8-24,8S8,37,8,35c0-1.812,10.745-8,24-8S56,33.063,56,35z" fill="#E0E0D1"/><path d="M41.474,30.474C41.474,35.706,37.232,36,32,36s-9.474-0.294-9.474-5.526S26.768,21,32,21  S41.474,25.242,41.474,30.474z" fill="#231F20" opacity="0.2"/><path d="M41.474,28.474C41.474,33.706,37.232,34,32,34s-9.474-0.294-9.474-5.526S26.768,19,32,19  S41.474,23.242,41.474,28.474z" fill="#77B3D4"/></svg>
+<defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%" style="stop-color:#000000;" stop-opacity="0" />
+        <stop offset="79%" style="stop-color:#000000;" stop-opacity="0" />
+        <stop offset="79%" style="stop-color:#000000;" stop-opacity="0.1" />
+        <stop offset="100%" style="stop-color:#000000;" stop-opacity="0.1" />
+    </linearGradient>
+</defs>
+
+<rect width="64" height="64" fill="url(#grad1)" />
+
+<rect width="64" height="64" fill="url(#grad2)" />
+
+<path d="M56,37c0,2-10.745,8-24,8S8,39,8,37c0-1.812,10.745-8,24-8S56,35.063,56,37z" fill="#231F20" opacity="0.2"/><path d="M56,35c0,2-10.745,8-24,8S8,37,8,35c0-1.812,10.745-8,24-8S56,33.063,56,35z" fill="#E0E0D1"/><path d="M41.474,30.474C41.474,35.706,37.232,36,32,36s-9.474-0.294-9.474-5.526S26.768,21,32,21  S41.474,25.242,41.474,30.474z" fill="#231F20" opacity="0.2"/><path d="M41.474,28.474C41.474,33.706,37.232,34,32,34s-9.474-0.294-9.474-5.526S26.768,19,32,19  S41.474,23.242,41.474,28.474z" fill="#77B3D4"/></svg>

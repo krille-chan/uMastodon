@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umastodon.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-14 09:26+0000\n"
-"PO-Revision-Date: 2018-05-14 14:20+0000\n"
+"POT-Creation-Date: 2018-06-03 10:07+0000\n"
+"PO-Revision-Date: 2018-06-14 17:47+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../qml/pages/Info.qml:35
 msgid "Buy me a coffee"
-msgstr "Invitarme a un café"
+msgstr "Invíteme a un café"
 
 #: ../qml/pages/Info.qml:44
 msgid "uMastodon by Christian Pauly"
@@ -48,5 +48,5 @@ msgid "Email: "
 msgstr "Correo electrónico: "
 
 #: umastodon.desktop.in.h:1
-msgid "uMastodon"
-msgstr "uMastodon" 
+msgid "uMastonauts"
+msgstr "uMastonauts" 

@@ -38,6 +38,36 @@ Page {
         preferences.javascriptCanAccessClipboard: true
         filePicker: pickerComponent
 
+        Loader {
+            anchors {
+                fill: webView
+
+            }
+            active: webView &&
+            (webProcessMonitor.crashed || (webProcessMonitor.killed && !webView.loading))
+
+            WebProcessMonitor {
+                id: webProcessMonitor
+                webview: webView
+            }
+            asynchronous: true
+        }
+        Loader {
+            anchors {
+                fill: webView
+
+            }
+            sourceComponent: ErrorSheet {
+                visible: webView && webView.lastLoadFailed
+                onRefreshClicked: {
+                    if (webView)
+                    webView.reload()
+                }
+            }
+            asynchronous: true
+        }
+
+
         contextualActions: ActionList {
             Action {
                 id: linkAction
@@ -56,7 +86,7 @@ Page {
             Action {
                 text: i18n.tr("Open in browser")
                 enabled: webview.contextualData.href.toString()
-                onTriggered: linkAction.enabled ? Qt.openUrlExternally( webView.contextualData.href ) : Qt.openUrlExternally( webView.contextualData.img ) 
+                onTriggered: linkAction.enabled ? Qt.openUrlExternally( webView.contextualData.href ) : Qt.openUrlExternally( webView.contextualData.img )
             }
         }
 
@@ -103,13 +133,10 @@ Page {
             color: UbuntuColors.red
             text: "Choose another Instance"
             onClicked: {
-                settings.instance = undefined
                 mainStack.clear ()
                 mainStack.push (Qt.resolvedUrl("./InstancePicker.qml"))
+                settings.instance = undefined
             }
         }
     }
-
-
-
 }

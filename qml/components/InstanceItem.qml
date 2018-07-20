@@ -34,14 +34,5 @@ ListItem {
             visible: false
             onStatusChanged: if (status == Image.Ready) visible = true
         }
-        ActivityIndicator {
-            id: indicator
-            width: units.gu(4)
-            SlotsLayout.position: SlotsLayout.Leading;
-            anchors.verticalCenter: parent.verticalCenter
-            running: !icon.visible
-            visible: running
-        }
-
     }
 }

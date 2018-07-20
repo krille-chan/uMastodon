@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umastodon.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 08:16+0000\n"
+"POT-Creation-Date: 2018-07-20 09:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/pages/MastodonWebview.qml:44
+#: ../qml/pages/MastodonWebview.qml:74
 msgid "Copy Link"
 msgstr ""
 
-#: ../qml/pages/MastodonWebview.qml:51
+#: ../qml/pages/MastodonWebview.qml:81
 msgid "Copy Image"
 msgstr ""
 
-#: ../qml/pages/MastodonWebview.qml:57
+#: ../qml/pages/MastodonWebview.qml:87
 msgid "Open in browser"
 msgstr ""
 
-#: ../qml/pages/MastodonWebview.qml:84
+#: ../qml/pages/MastodonWebview.qml:114
 msgid "Loading "
 msgstr ""
 
@@ -63,6 +63,14 @@ msgstr ""
 
 #: ../qml/pages/Info.qml:56
 msgid "License"
+msgstr ""
+
+#: ../qml/components/ErrorSheet.qml:14
+msgid "Error while loading "
+msgstr ""
+
+#: ../qml/components/ErrorSheet.qml:23
+msgid "Refresh page"
 msgstr ""
 
 #: umastodon.desktop.in.h:1

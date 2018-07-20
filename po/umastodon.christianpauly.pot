@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umastodon.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 09:50+0000\n"
+"POT-Creation-Date: 2018-07-20 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/pages/MastodonWebview.qml:61
+#: ../qml/pages/MastodonWebview.qml:44
+msgid "Copy Link"
+msgstr ""
+
+#: ../qml/pages/MastodonWebview.qml:51
+msgid "Copy Image"
+msgstr ""
+
+#: ../qml/pages/MastodonWebview.qml:57
+msgid "Open in browser"
+msgstr ""
+
+#: ../qml/pages/MastodonWebview.qml:84
 msgid "Loading "
 msgstr ""
 
@@ -25,7 +37,7 @@ msgstr ""
 msgid "Choose a Mastodon instance"
 msgstr ""
 
-#: ../qml/pages/InstancePicker.qml:78 ../qml/pages/Info.qml:10
+#: ../qml/pages/InstancePicker.qml:78
 msgid "Info"
 msgstr ""
 
@@ -33,16 +45,24 @@ msgstr ""
 msgid "Search or enter a custom address"
 msgstr ""
 
-#: ../qml/pages/Info.qml:35
-msgid "Buy me a coffee"
+#: ../qml/pages/Info.qml:11
+msgid "Info about uMastonauts %1"
+msgstr ""
+
+#: ../qml/pages/Info.qml:37
+msgid "Donate me a coffee"
 msgstr ""
 
 #: ../qml/pages/Info.qml:44
-msgid "uMastodon by Christian Pauly"
+msgid "Contributors"
 msgstr ""
 
-#: ../qml/pages/Info.qml:44
-msgid "Email: "
+#: ../qml/pages/Info.qml:50
+msgid "Source code"
+msgstr ""
+
+#: ../qml/pages/Info.qml:56
+msgid "License"
 msgstr ""
 
 #: umastodon.desktop.in.h:1

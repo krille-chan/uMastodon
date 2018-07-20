@@ -15,16 +15,7 @@ ListItem {
     //height: layout.height
 
     onClicked: {
-        // Create the database if it doesn't already exist
-        db.transaction(
-            function(tx) {
-                tx.executeSql('DELETE FROM Url')
-
-                tx.executeSql('INSERT INTO Url VALUES("' + text + '")')
-            }
-        )
-
-        instance = text
+        settings.instance = text
         mainStack.push (Qt.resolvedUrl("../pages/MastodonWebview.qml"))
     }
 

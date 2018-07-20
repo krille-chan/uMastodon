@@ -30,7 +30,7 @@ Page {
             if ( loadProgress === 100 ) visible = true
         }
         anchors.fill: parent
-        url: instance.indexOf("http") != -1 ? instance : "https://" + instance
+        url: settings.instance.indexOf("http") != -1 ? settings.instance : "https://" + settings.instance
         preferences.localStorageEnabled: true
         preferences.allowFileAccessFromFileUrls: true
         preferences.allowUniversalAccessFromFileUrls: true
@@ -38,10 +38,33 @@ Page {
         preferences.javascriptCanAccessClipboard: true
         filePicker: pickerComponent
 
+        contextualActions: ActionList {
+            Action {
+                id: linkAction
+                text: i18n.tr("Copy Link")
+                enabled: webView.contextualData.href.toString()
+                onTriggered: Clipboard.push([webView.contextualData.href])
+            }
+
+            Action {
+                id: imageAction
+                text: i18n.tr("Copy Image")
+                enabled: webView.contextualData.img.toString()
+                onTriggered: Clipboard.push([webView.contextualData.img])
+            }
+
+            Action {
+                text: i18n.tr("Open in browser")
+                enabled: webview.contextualData.href.toString()
+                onTriggered: linkAction.enabled ? Qt.openUrlExternally( webView.contextualData.href ) : Qt.openUrlExternally( webView.contextualData.img ) 
+            }
+        }
+
+
         // Open external URL's in the browser and not in the app
         onNavigationRequested: {
-            console.log ( request.url, ("" + request.url).indexOf ( instance ) !== -1 )
-            if ( ("" + request.url).indexOf ( instance ) !== -1 ) {
+            console.log ( request.url, ("" + request.url).indexOf ( settings.instance ) !== -1 )
+            if ( ("" + request.url).indexOf ( settings.instance ) !== -1 ) {
                 request.action = 0
             } else {
                 request.action = 1
@@ -58,7 +81,7 @@ Page {
         Label {
             id: progressLabel
             color: "white"
-            text: i18n.tr('Loading ') + instance
+            text: i18n.tr('Loading ') + settings.instance
             anchors.centerIn: parent
             textSize: Label.XLarge
         }
@@ -80,13 +103,9 @@ Page {
             color: UbuntuColors.red
             text: "Choose another Instance"
             onClicked: {
-                db.transaction(
-                    function(tx) {
-                        tx.executeSql('DELETE FROM Url')
-                        mainStack.clear ()
-                        mainStack.push (Qt.resolvedUrl("./InstancePicker.qml"))
-                    }
-                )
+                settings.instance = undefined
+                mainStack.clear ()
+                mainStack.push (Qt.resolvedUrl("./InstancePicker.qml"))
             }
         }
     }

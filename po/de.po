@@ -17,6 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../qml/pages/MastodonWebview.qml:44
+msgid "Copy Link"
+msgstr "Link kopieren"
+
+#: ../qml/pages/MastodonWebview.qml:51
+msgid "Copy Image"
+msgstr "Bild kopieren"
+
+#: ../qml/pages/MastodonWebview.qml:57
+msgid "Open in browser"
+msgstr "Im Browser öffnen"
+
 #: ../qml/pages/MastodonWebview.qml:62
 msgid "Loading "
 msgstr "Lade "

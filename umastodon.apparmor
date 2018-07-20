@@ -4,6 +4,7 @@
         "audio",
         "video",
         "content_exchange",
+        "content_exchange_source",
         "camera",
         "microphone",
         "webview"

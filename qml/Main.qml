@@ -19,6 +19,9 @@ MainView {
     property var token: Token.token
     property var db: LocalStorage.openDatabaseSync("uMastodonInstance", "1.0", "Instance for uMastodon", 1000000)
 
+    // automatically anchor items to keyboard that are anchored to the bottom
+    anchorToKeyboard: true
+
     PageStack {
         id: mainStack
     }

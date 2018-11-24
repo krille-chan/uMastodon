@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
 import "../components"
@@ -34,10 +34,10 @@ Page {
             }
 
             SettingsListItem {
-                name: i18n.tr("Donate me a coffee")
+                name: i18n.tr("Become a patron")
                 icon: "like"
                 iconColor: UbuntuColors.red
-                onClicked: Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZAGCFNJ2SKZY8")
+                onClicked: Qt.openUrlExternally("https://www.patreon.com/krillechritzelius")
             }
 
             SettingsListItem {

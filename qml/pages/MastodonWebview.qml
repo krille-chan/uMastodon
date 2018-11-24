@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
 import Ubuntu.Web 0.2
@@ -131,7 +131,7 @@ Page {
             anchors.bottomMargin: height
             anchors.horizontalCenter: parent.horizontalCenter
             color: UbuntuColors.red
-            text: "Choose another Instance"
+            text: i18n.tr("Choose another Instance")
             onClicked: {
                 mainStack.clear ()
                 mainStack.push (Qt.resolvedUrl("./InstancePicker.qml"))

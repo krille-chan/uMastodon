@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import com.canonical.Oxide 1.8 as Oxide
 
 Item {

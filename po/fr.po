@@ -37,6 +37,18 @@ msgstr "Chercher ou saisir une adresse personalisée"
 msgid "Buy me a coffee"
 msgstr "Achetez-moi un café"
 
+#: ../qml/components/ErrorSheet.qml:28
+msgid "Refresh page"
+msgstr "Recharger"
+
+#: ../qml/pages/MastodonWebview.qml:134
+msgid "Choose another Instance"
+msgstr "Choisissez une autre instance"
+
+#: ../qml/pages/Info.qml:37
+msgid "Become a patron"
+msgstr "Devenir mécène"
+
 #: ../qml/pages/Info.qml:44
 msgid "uMastodon by Christian Pauly"
 msgstr "uMastodon par Christian Pauly"

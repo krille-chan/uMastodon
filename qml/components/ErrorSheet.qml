@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import Ubuntu.Components 1.3
 
 Rectangle {
@@ -12,8 +12,13 @@ Rectangle {
         id: progressLabel
         color: "white"
         text: i18n.tr('Error while loading ') + settings.instance
-        anchors.centerIn: parent
-        textSize: Label.XLarge
+        anchors.left: parent.left
+        anchors.right: parent.right
+        horizontalAlignment: Text.AlignHCenter
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.margins: units.gu(2)
+        wrapMode: text.WordWrap
+        textSize: Label.Large
     }
 
     Button {
@@ -33,7 +38,7 @@ Rectangle {
         onClicked: {
             mainStack.clear ()
             mainStack.push (Qt.resolvedUrl("../pages/InstancePicker.qml"))
-            settings.instance = undefined
+            settings.instance = settings.token = settings.push = undefined
         }
     }
 }

@@ -41,13 +41,21 @@ msgstr "Wähle eine Mastodon Instanz"
 msgid "Info"
 msgstr ""
 
+#: ../qml/components/ErrorSheet.qml:28
+msgid "Refresh page"
+msgstr "Neu laden"
+
+#: ../qml/pages/MastodonWebview.qml:134
+msgid "Choose another Instance"
+msgstr "Wähle eine andere Instanz"
+
 #: ../qml/pages/InstancePicker.qml:111
 msgid "Search or enter a custom address"
 msgstr "Suche oder gib eine Adresse ein"
 
-#: ../qml/pages/Info.qml:35
-msgid "Buy me a coffee"
-msgstr "Gib mir einen Kaffee aus"
+#: ../qml/pages/Info.qml:37
+msgid "Become a patron"
+msgstr "Werde ein Patron"
 
 #: ../qml/pages/Info.qml:44
 msgid "uMastodon by Christian Pauly"

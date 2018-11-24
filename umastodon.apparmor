@@ -5,9 +5,7 @@
         "video",
         "content_exchange",
         "content_exchange_source",
-        "camera",
-        "microphone",
         "webview"
     ],
-    "policy_version": 1.3
+    "policy_version": 16.04
 }

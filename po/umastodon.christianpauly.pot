@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the umastodon.christianpauly package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: umastodon.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 09:04+0000\n"
+"POT-Creation-Date: 2018-11-24 21:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,10 @@ msgstr ""
 msgid "Loading "
 msgstr ""
 
+#: ../qml/pages/MastodonWebview.qml:134
+msgid "Choose another Instance"
+msgstr ""
+
 #: ../qml/pages/InstancePicker.qml:70
 msgid "Choose a Mastodon instance"
 msgstr ""
@@ -50,7 +54,7 @@ msgid "Info about uMastonauts %1"
 msgstr ""
 
 #: ../qml/pages/Info.qml:37
-msgid "Donate me a coffee"
+msgid "Become a patron"
 msgstr ""
 
 #: ../qml/pages/Info.qml:44
@@ -69,7 +73,7 @@ msgstr ""
 msgid "Error while loading "
 msgstr ""
 
-#: ../qml/components/ErrorSheet.qml:23
+#: ../qml/components/ErrorSheet.qml:28
 msgid "Refresh page"
 msgstr ""
 

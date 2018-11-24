@@ -1,4 +1,4 @@
-import QtQuick 2.4
+import QtQuick 2.9
 import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
@@ -30,6 +30,8 @@ MainView {
     Settings {
         id: settings
         property var instance
+        property var push: false
+        property var token
     }
 
     Component.onCompleted: {

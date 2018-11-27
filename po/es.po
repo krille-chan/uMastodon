@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: umastodon.christianpauly\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-20 08:16+0000\n"
-"PO-Revision-Date: 2018-07-20 10:30+0000\n"
+"POT-Creation-Date: 2018-11-24 21:56+0000\n"
+"PO-Revision-Date: 2018-11-27 00:21+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -17,21 +16,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/pages/MastodonWebview.qml:44
+#: ../qml/pages/MastodonWebview.qml:74
 msgid "Copy Link"
 msgstr "Copiar enlace"
 
-#: ../qml/pages/MastodonWebview.qml:51
+#: ../qml/pages/MastodonWebview.qml:81
 msgid "Copy Image"
 msgstr "Copiar imagen"
 
-#: ../qml/pages/MastodonWebview.qml:57
+#: ../qml/pages/MastodonWebview.qml:87
 msgid "Open in browser"
 msgstr "Abrir en el navegador"
 
-#: ../qml/pages/MastodonWebview.qml:84
+#: ../qml/pages/MastodonWebview.qml:114
 msgid "Loading "
 msgstr "Cargando "
+
+#: ../qml/pages/MastodonWebview.qml:134
+msgid "Choose another Instance"
+msgstr "Elegir otra instancia"
 
 #: ../qml/pages/InstancePicker.qml:70
 msgid "Choose a Mastodon instance"
@@ -50,30 +53,13 @@ msgid "Info about uMastonauts %1"
 msgstr "Información acerca de uMastonauts %1"
 
 #: ../qml/pages/Info.qml:37
-msgid "Donate me a coffee"
-msgstr "Invíteme a un café"
+msgid "Become a patron"
+msgstr "Hacerse patrocinador"
 
 #: ../qml/pages/Info.qml:44
 msgid "Contributors"
 msgstr "Colaboradores"
 
-<<<<<<< HEAD
-#: ../qml/components/ErrorSheet.qml:28
-msgid "Refresh page"
-msgstr "Actualizar página"
-
-#: ../qml/pages/MastodonWebview.qml:134
-msgid "Choose another Instance"
-msgstr "Elige otra instancia"
-
-#: ../qml/pages/Info.qml:37
-msgid "Become a patron"
-msgstr "Conviértete en un patrón"
-
-#: ../qml/pages/Info.qml:44
-msgid "Email: "
-msgstr "Correo electrónico: "
-=======
 #: ../qml/pages/Info.qml:50
 msgid "Source code"
 msgstr "Código fuente"
@@ -81,8 +67,18 @@ msgstr "Código fuente"
 #: ../qml/pages/Info.qml:56
 msgid "License"
 msgstr "Licencia"
->>>>>>> 5d8c3d752d1cb799ebf3bfa1e6784a5f2c340767
+
+#: ../qml/components/ErrorSheet.qml:14
+msgid "Error while loading "
+msgstr "Error durante la carga "
+
+#: ../qml/components/ErrorSheet.qml:28
+msgid "Refresh page"
+msgstr "Recargar la página"
 
 #: umastodon.desktop.in.h:1
 msgid "uMastonauts"
 msgstr "uMastonauts"
+
+#~ msgid "Donate me a coffee"
+#~ msgstr "Invíteme a un café"
